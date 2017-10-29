@@ -1,6 +1,0 @@
-C:\Users\lGGlWPl\Documents\Visual Studio 2015\Projects\HomeWorkExampleOne\HomeWorkExampleOne\bin\Debug\HomeWorkExampleOne.exe.config
-C:\Users\lGGlWPl\Documents\Visual Studio 2015\Projects\HomeWorkExampleOne\HomeWorkExampleOne\obj\Debug\Authorization.g.cs
-C:\Users\lGGlWPl\Documents\Visual Studio 2015\Projects\HomeWorkExampleOne\HomeWorkExampleOne\obj\Debug\MainWindow.g.cs
-C:\Users\lGGlWPl\Documents\Visual Studio 2015\Projects\HomeWorkExampleOne\HomeWorkExampleOne\obj\Debug\App.g.cs
-C:\Users\lGGlWPl\Documents\Visual Studio 2015\Projects\HomeWorkExampleOne\HomeWorkExampleOne\obj\Debug\HomeWorkExampleOne_MarkupCompile.cache
-C:\Users\lGGlWPl\Documents\Visual Studio 2015\Projects\HomeWorkExampleOne\HomeWorkExampleOne\obj\Debug\HomeWorkExampleOne_MarkupCompile.lref
