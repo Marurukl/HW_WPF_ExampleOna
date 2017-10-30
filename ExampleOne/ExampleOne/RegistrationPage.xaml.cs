@@ -24,7 +24,7 @@ namespace ExampleOne
         {
             InitializeComponent();
             dataBase = new DataBase();
-            dataBase.readFromFile();
+            dataBase.ReadFromFile();
         }
         DataBase dataBase;
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -46,13 +46,13 @@ namespace ExampleOne
                     {
                         dataBase.AddUser(loginTextBox.Text, redSlider.Value, greenSlider.Value, blueSlider.Value);
                         (this.Parent as MainWindow).NavigationService.Navigate(new AuthorizationPage());
-                        dataBase.saveInFile();
                     }
                     else
                     {
                         errorLabel.Content = "Неправльный Логин!";
                     }
                 }
+                dataBase.SaveInFile();
             }
             else
             {

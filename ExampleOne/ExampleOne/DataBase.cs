@@ -22,7 +22,7 @@ namespace ExampleOne
             this.green.Add(green);
             this.blue.Add(blue);
         }
-        public void changeBG(string login, double red, double green, double blue)
+        public void ChangeBG(string login, double red, double green, double blue)
         {
             for (int i = 0; i < this.login.Count; i++)
             {
@@ -34,8 +34,9 @@ namespace ExampleOne
                 }
             }
         }
-        public void readFromFile()
+        public void ReadFromFile()
         {
+            
             string dataLogin, dataRed, dataGreen, dataBlue;
             string[] login, red, green, blue;
             double white = 254.9;
@@ -105,7 +106,7 @@ namespace ExampleOne
                 FileStream fsRed = new FileStream(pathRed, FileMode.Create);
                 FileStream fsGreen = new FileStream(pathGreen, FileMode.Create);
                 FileStream fsBlue = new FileStream(pathBlue, FileMode.Create);
-
+                
                 this.login.Add("Admin");
                 this.red.Add(white);
                 this.green.Add(white);
@@ -170,7 +171,7 @@ namespace ExampleOne
             }
         }
 
-        public bool checkUser(string login, object error)
+        public bool CheckUser(string login, object error)
         {
             
             for (int i = 0; i < this.login.Count; i++)
@@ -184,12 +185,16 @@ namespace ExampleOne
             return false;
         }
 
-        public void saveInFile()
+        public void SaveInFile()
         {
-            FileStream fsLogin = new FileStream(pathLogin, FileMode.OpenOrCreate);
-            FileStream fsRed = new FileStream(pathRed, FileMode.OpenOrCreate);
-            FileStream fsGreen = new FileStream(pathGreen, FileMode.OpenOrCreate);
-            FileStream fsBlue = new FileStream(pathBlue, FileMode.OpenOrCreate);
+            File.AppendAllText(pathLogin, "");
+            File.AppendAllText(pathRed, "");
+            File.AppendAllText(pathGreen, "");
+            File.AppendAllText(pathBlue, "");
+            FileStream fsLogin = new FileStream(pathLogin, FileMode.Create);
+            FileStream fsRed = new FileStream(pathRed, FileMode.Create);
+            FileStream fsGreen = new FileStream(pathGreen, FileMode.Create);
+            FileStream fsBlue = new FileStream(pathBlue, FileMode.Create);
             string login = "", red = "", green = "", blue = "";
             login= this.login[0];
             int size = this.login.Count;

@@ -25,12 +25,12 @@ namespace ExampleOne
         {
             InitializeComponent();
             dataBase = new DataBase();
-            dataBase.readFromFile();
+            dataBase.ReadFromFile();
         }
 
         private void SignInButton_Click(object sender, RoutedEventArgs e)
         {
-            if (dataBase.checkUser(loginTextBox.Text, errorLabel.Content))
+            if (dataBase.CheckUser(loginTextBox.Text, errorLabel.Content))
             {
                (this.Parent as MainWindow).NavigationService.Navigate(new MainPage(loginTextBox.Text));
             }
@@ -47,7 +47,7 @@ namespace ExampleOne
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            dataBase.readFromFile();
+            dataBase.ReadFromFile();
         }
     }
 }

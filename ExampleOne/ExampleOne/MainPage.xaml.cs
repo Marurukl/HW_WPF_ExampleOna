@@ -24,7 +24,7 @@ namespace ExampleOne
         {
             InitializeComponent();
             dataBase = new DataBase();
-            dataBase.readFromFile();
+            dataBase.ReadFromFile();
             this.login = login;
             byte redByte, greenByte, blueByte;
             for (int i = 0; i < dataBase.login.Count; i++)
@@ -51,8 +51,8 @@ namespace ExampleOne
 
         private void ChangeButton_Click(object sender, RoutedEventArgs e)
         {
-            dataBase.changeBG(login, redSlider.Value, greenSlider.Value, blueSlider.Value);
-            dataBase.saveInFile();
+            dataBase.ChangeBG(login, redSlider.Value, greenSlider.Value, blueSlider.Value);
+            dataBase.SaveInFile();
         }
     }
 }
